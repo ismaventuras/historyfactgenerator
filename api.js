@@ -9,7 +9,6 @@ promise
         return processingPromise;
     })
     .then(function (processedResponse) {
-        console.log(processedResponse.image)
         if(processedResponse.image.length != 0 ){
             const img = document.createElement("img");
             img.src = processedResponse.image;
