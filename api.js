@@ -1,4 +1,4 @@
-const API_URL = "http://api.ismaventuras.com/facts/get/random";
+const API_URL = "https://api.ismaventuras.com/facts/get/random";
 
 const contenedor = document.querySelector(".container");
 
