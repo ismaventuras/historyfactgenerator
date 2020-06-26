@@ -8,10 +8,14 @@ promise
         return processingPromise;
     })
     .then(function (processedResponse) {
-        if(processedResponse.image.length != 0 ){
-            const img = document.getElementById("fact-img");
-            img.src = processedResponse.image;
-            img.alt = processedResponse.title;
+        console.log(processedResponse.image);
+        if (processedResponse.image.length != 0) {
+            if (processedResponse.image.length == 1)
+            {
+                const img = document.getElementById("fact-img");
+                img.src = processedResponse.image;
+                img.alt = processedResponse.title;
+            }
         }
 
         // const h1 = document.createElement("h1");
@@ -20,8 +24,4 @@ promise
 
         const p = document.getElementById("fact-body");
         p.innerText = processedResponse.fact_body;
-
-
-  
-
     })
