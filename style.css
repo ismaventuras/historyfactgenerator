@@ -12,9 +12,12 @@ body {
   }
 .container{
     font-family: 'DM Mono', monospace;
-
+    
 }
 
+.card{
+    padding:5%;
+}
 .card-body{
     display: flex;
     flex-direction: column;
@@ -22,6 +25,9 @@ body {
     justify-content: center;
 }
 
+.card-text{
+    text-align: justify;
+}
 img{
 
 }
